@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*Kleuren schema*/
+
+:root {
+    --lavaGrey: #060F0C;
+    --olijfGroen: #7A8642;
+    --black: #0F131F;
+    --blauwig: #949FB1;
+    --gebrokenWit: #fcf9e9; 
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: var(--blauwig);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+
+
+
+}
+
+body {
+    background-color: var(--gebrokenWit);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+}
+
+
+header {
+    background-image: linear-gradient(180deg, rgba(6, 15, 12, 1), rgba(6, 15, 12, 1),rgba(6, 15, 12, 0.915), rgba(6, 15, 12, 0.768),rgba(6, 15, 12, 0.593),rgba(6, 15, 12, 0.433), rgba(0, 0, 0, 0 ));  
+    height: 100vh;
+    
+}
+
+
+
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5em;
+    opacity: 90%;
+    z-index: 4;
+    background-color: var(--lavaGrey);
+    padding: 2em 5em 0 0 ; 
+    
+  
+
+}
+ul li { 
+    margin: 0 0 2em 0 ;
+}
+
+ul a {
+    font-family: 'Ysabeau Office', sans-serif;
+    text-decoration: none;
+    color: #FAF7E8;
+    font-size: 2em;
+    padding: 0.25em;
+    letter-spacing: 0.125em;
+    
+
+}
+ul a:hover { 
+    color: var(--olijfGroen); 
+    transition: 0.5s ease; 
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+.container-flipbook {
+    color: var(--olijfGroen);
+    font-weight: bolder;
+}
+
+h1:first-of-type {
+    
+    color: #FAF7E8;
+    font-weight: 500;
+    display: block;
+    padding-top: 4em;
+    font-size: 3.5rem;
+
+}
+h1 { color: #FAF7E8;
+    font-weight: 500;
+    display: block;
+    padding-top: 0.2em;
+    font-size: 3rem;
+}
+
+header img { 
+    width: 100%;
+    height: 40vh;
+    position: absolute;
+    z-index: 4;
+    top: 60%; 
+    object-fit: contain; 
+
+}
+
+
+main { 
+    background-color: var(--gebrokenWit); 
+    width: 100%;
+    
+    
+
+}
+h2 { 
+    width: 100%;
+    padding: 3em;
+
+    text-align: center;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 2em;
+
+    
+}
+h3 {  width: 100%;
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 2em;
+}
+
+/* Over mij sectie   */
+
+#overMij { 
+    display: flex; 
+    flex-wrap: wrap;
+    margin: 8em 5em 5em 5em;
+    padding-top: 3.5em;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+
+#overMij img { 
+    width: 30% ;
+    object-fit: contain;
+}
+#overMij article { 
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 2em 5em 0 5em; 
+    
+}
+#overMij p { 
+    margin: 0 0 2em 0; 
+    padding: 0 12em 0 0; 
+    font-size: 1.2em;
+}
+#overMij ul { 
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#overMij ul h3 { 
+    width: 100%;
+    margin: 1em; 
+
+}
+#overMij li { 
+    list-style: none;   
+}
+
+#overMij li img { 
+    width: 5vw; 
+    height: 5vh; 
+    margin: 1em; 
+} 
+
+/* SECTION WERK! */
+#Werk { 
+    margin: 5em; 
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-evenly;
+ 
+
+ 
+   
+   
+}
+
+
+#Werk article { 
+    position: relative;
+    width: 30%; 
+    margin: 0 0 2em 0; 
+    min-width: 250px ;
+   
+}
+
+#Werk article img { 
+    object-fit: cover; 
+    height: 100%; 
+    display: block;
+    width: 100%; 
+}
+
+.overlay { 
+    position: absolute;
+    top: 0 ; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    height: 100%; 
+    width: 100%; 
+    opacity:0; 
+    transition: 0.5s ease; 
+    background-color: var(--olijfGroen); 
+
+}
+.overlay:hover { 
+    opacity: 1;
+}
+.overlay h2 { 
+    color: var(--gebrokenWit); 
+    font-family: 'Ysabeau Office', sans-serif;
+    font-size: 2em;
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center; 
+} 
+
+  .overlay P { 
+    color: var(--gebrokenWit); 
+    font-size: 1.5em;
+    position: absolute;
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  }
+  /* SECTION CONTACT */
+  #contact { 
+    background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(52, 56, 34, 1)) ; 
+    font-family: 'Ysabeau Office', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5em 5em 1em 5em; 
+    
+
+}
+#contact img { 
+    width: 35%;
+    padding: 5em; 
+    object-fit: contain;
+}
+
+#contact article { 
+    width: 50%; 
+}
+#contact h1 { 
+    font-size: 3em; 
+}
+#contact h2 { 
+    color: var(--gebrokenWit); 
+    
+    
+}
+
+/* CONTACTFORMULIER */
+form { 
+    margin: 2em; 
+    font-size: 1em;
+}
+.feedback-input {
+  color: var(--gebrokenWit);
+  font-family: 'Ysabeau Office', sans-serif;
+  font-weight:500;
+  font-size: 1.5em;
+  border-radius: 5px;
+  line-height: 1em;
+  background-color: transparent;
+  border:2px solid var(--gebrokenWit);
+  transition: all 0.3s;
+  padding: 0.5em;
+  margin-bottom: 1em; 
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+
+}
+
+.feedback-input:focus { border:2px solid var(--gebrokenWit) }
+
+textarea {
+  height: 5em;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Ysabeau Office', sans-serif;
+  width: 100%;
+  background-image:linear-gradient(131deg,  #B7C476, #7C8550, #404529);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:var(--gebrokenWit); 
+  font-size: 1em;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-0.5em;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+    background: linear-gradient(131deg,  #B7C476, #7C8550, #404529);
+    box-shadow: 0 0.5em 0.5em -0.4em var(--olijfGroen);
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+} 
+::placeholder { 
+    color: (var(--gebrokenWit)); 
+}
+
+
+form h3 { 
+    color: var(--gebrokenWit);
+}
+footer { 
+    background-color: rgb(52, 56, 34); 
+    font-size: 3.5em;
+    
+}
+footer ul { 
+    display: flex; 
+    justify-content: center;
+    padding: 0 5em 0em 5em; 
+    
+}
+
+footer li { 
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+
+}
+.fa { 
+    padding: 1em; 
+    width: 5vw;
+    text-align: center;
+    text-decoration: none;
+}
+footer p { 
+    color: var(--gebrokenWit); 
+    font-size: 0.3em;
+    text-align: center;
+    padding-bottom: 1em;
+}
