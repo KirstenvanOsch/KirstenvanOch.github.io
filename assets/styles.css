@@ -12,7 +12,7 @@
     --olijfGroen: #7A8642;
     --black: #0F131F;
     --blauwig: #949FB1;
-    --gebrokenWit: #FAF7E8; 
+    --gebrokenWit: #fcf9e9; 
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +29,7 @@
 
 body {
     background-color: var(--gebrokenWit);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
 }
 
@@ -69,7 +69,7 @@ ul li {
 }
 
 ul a {
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: #FAF7E8;
     font-size: 2em;
@@ -132,14 +132,19 @@ main {
 }
 h2 { 
     width: 100%;
-    padding: 1em;
+    padding: 3em;
 
     text-align: center;
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
 
     
 }
+h3 {  width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
 /* Over mij sectie   */
 
 #overMij { 
@@ -171,7 +176,7 @@ h2 {
 }
 #overMij ul { 
     display: flex;
-    width: 100%;
+    width: 70%;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -196,22 +201,24 @@ h2 {
     display: flex;
     flex-wrap: wrap;
    justify-content: space-evenly;
-   height: 100vh;
-   padding-top: 3.5em;
+ 
+
+ 
    
    
 }
+
 
 #Werk article { 
     position: relative;
     width: 30%; 
-    height: 15em;  
-    margin: 0 0 3em 0; 
+    margin: 0 0 2em 0; 
     min-width: 250px ;
+   
 }
 
 #Werk article img { 
-    object-fit: cover;
+    object-fit: cover; 
     height: 100%; 
     display: block;
     width: 100%; 
@@ -235,7 +242,7 @@ h2 {
 }
 .overlay h2 { 
     color: var(--gebrokenWit); 
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     position: absolute;
     top: 40%; 
@@ -258,15 +265,15 @@ h2 {
   /* SECTION CONTACT */
   #contact { 
     background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(52, 56, 34, 1)) ; 
-    font-family: 'Ysabeau Office', sans-serif;
+   font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
-    padding: 5em; 
+    padding: 5em 5em 1em 5em; 
     
 
 }
 #contact img { 
-    width: 45%;
+    width: 35%;
     padding: 5em; 
     object-fit: contain;
 }
@@ -337,4 +344,39 @@ textarea {
 } 
 ::placeholder { 
     color: (var(--gebrokenWit)); 
+}
+
+
+form h3 { 
+    color: var(--gebrokenWit);
+}
+footer { 
+    background-color: rgb(52, 56, 34); 
+    font-size: 3.5em;
+    
+}
+footer ul { 
+    display: flex; 
+    justify-content: center;
+    padding: 0 5em 0em 5em; 
+    
+}
+
+footer li { 
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+
+}
+.fa { 
+    padding: 1em; 
+    width: 5vw;
+    text-align: center;
+    text-decoration: none;
+}
+footer p { 
+    color: var(--gebrokenWit); 
+    font-size: 0.3em;
+    text-align: center;
+    padding-bottom: 1em;
 }
