@@ -29,7 +29,7 @@
 
 body {
     background-color: var(--gebrokenWit);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
 }
 
@@ -69,7 +69,7 @@ ul li {
 }
 
 ul a {
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: #FAF7E8;
     font-size: 2em;
@@ -135,13 +135,13 @@ h2 {
     padding: 3em;
 
     text-align: center;
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
 
     
 }
 h3 {  width: 100%;
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
 }
 
@@ -242,7 +242,7 @@ h3 {  width: 100%;
 }
 .overlay h2 { 
     color: var(--gebrokenWit); 
-    font-family: 'Ysabeau Office', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2em;
     position: absolute;
     top: 40%; 
@@ -265,7 +265,7 @@ h3 {  width: 100%;
   /* SECTION CONTACT */
   #contact { 
     background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(52, 56, 34, 1)) ; 
-    font-family: 'Ysabeau Office', sans-serif;
+   font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
     padding: 5em 5em 1em 5em; 
